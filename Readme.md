@@ -1,0 +1,1 @@
+Simple Bank is a simple banking application that provides APIS for the frontend. These APIS create and manage bank accounts, record all balance changes in each account and carry out money transfers between two accounts.
