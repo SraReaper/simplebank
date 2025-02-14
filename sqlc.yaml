@@ -1,0 +1,14 @@
+version: "2"
+servers:
+- engine: postgresql
+  uri: "postgresql://root:bancosimples@localhost:5432/simple_bank?sslmode=disable"
+sql:
+  - engine: "postgresql"
+    queries: "./db/query/"
+    schema: "./db/migration/"
+    database:
+      managed: true
+    gen:
+      go:
+        out: "./db/sqlc"
+        sql_package: "database/sql"
